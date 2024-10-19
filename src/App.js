@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
+import Confetti from 'react-confetti'
 
 // Keyframes for the pulse animation
 const pulse = keyframes`
@@ -43,7 +44,7 @@ const Title = styled.h1`
 const StoryPointsList = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap
 `;
 
@@ -75,8 +76,8 @@ const StoryPointButton = styled.button`
 
 const SelectedPointDisplay = styled.div`
   position: fixed;
-  top: 8rem;
-  font-size: 12rem;
+  top: 10rem;
+  font-size: 10rem;
   background: linear-gradient(45deg, #ff0f7b, #f89b29);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -92,7 +93,14 @@ function App() {
   return (
     <Container>
       {selectedPoint && (
-        <SelectedPointDisplay>{selectedPoint}</SelectedPointDisplay>
+        <React.Fragment>
+          <SelectedPointDisplay>{selectedPoint}</SelectedPointDisplay>
+          <Confetti
+            width={window.innerWidth}
+            height={window.innerHeight}
+            numberOfPieces={50}
+          />
+        </React.Fragment>
       )}
 
       <StoryPointsListContainer>
