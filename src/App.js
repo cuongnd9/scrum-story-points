@@ -43,7 +43,7 @@ const Title = styled.h1`
 const StoryPointsList = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap
 `;
 
@@ -75,8 +75,8 @@ const StoryPointButton = styled.button`
 
 const SelectedPointDisplay = styled.div`
   position: fixed;
-  top: 250px;
-  font-size: 12rem;
+  top: 200px;
+  font-size: 10rem;
   background: linear-gradient(45deg, #ff0f7b, #f89b29);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
