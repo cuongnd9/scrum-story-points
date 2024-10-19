@@ -75,7 +75,7 @@ const StoryPointButton = styled.button`
 
 const SelectedPointDisplay = styled.div`
   position: fixed;
-  top: 200px;
+  top: 150px;
   font-size: 10rem;
   background: linear-gradient(45deg, #ff0f7b, #f89b29);
   -webkit-background-clip: text;
