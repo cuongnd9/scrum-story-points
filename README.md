@@ -2,4 +2,4 @@
 
 A simple React app for visualizing story points in Scrum.
 
-<img width="310" alt="image" src="https://github.com/user-attachments/assets/9ecb074e-5d5b-4515-9890-16a1dfa3d261">
+![Scrum-Story-Points-Visualizer](https://github.com/user-attachments/assets/2dbc1f10-d557-4841-9c50-030a9a5964b6)
